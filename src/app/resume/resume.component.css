@@ -1,0 +1,145 @@
+/* Container pour centrer le bouton */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    padding: 0 20px;
+    margin-bottom: 95px;
+}
+
+/* Style des boutons */
+.btn {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.box {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.list-group-item-action {
+    color: #333;
+    text-decoration: none;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Style des titres dans les boîtes */
+.link-text {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Style des dropdowns */
+.hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.show {
+    max-height: 500px;
+    overflow: auto;
+    transition: max-height 0.3s ease-in;
+}
+
+.skills img {
+    width: 10px;
+    margin: 5px;
+}
+
+.skills {
+    width: 60px; /* Taille réduite des images */
+    height: 60px; /* Garder les proportions carrées */
+    margin: 5px; /* Espacement entre les images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    border-radius: 10px; /* Coins arrondis pour un effet visuel agréable */
+    display: inline-block; /* Pour aligner les images côte à côte */
+    object-fit: cover;
+}
+
+/* Conteneur pour les images des compétences */
+.skills-container {
+    text-align: center; /* Centrer les images */
+    padding: 10px; /* Ajouter un peu de padding */
+}
+
+.certifications {
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.education {
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .box {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .logo {
+        width: 10px;
+        height: 10px;
+    }
+
+    .link-text {
+        font-size: 1em;
+    }
+
+    .skills img {
+        width: 50px;
+    }
+}

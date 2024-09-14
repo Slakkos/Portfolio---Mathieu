@@ -1,0 +1,54 @@
+<app-header></app-header>
+<app-nav class="first"></app-nav>
+
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+</div>
+
+<div class="box shadow border">
+    <a (click)="toggleWorkExperience()" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+        <img src="circle.png" alt="linkedin logo" class="logo">
+        <h3 class="link-text">Work Experience</h3>
+    </a>
+    <div id="workExperienceContent" class="hide">
+        <!-- Contenu de l'expérience de travail ici -->
+    </div>
+</div>
+
+<div class="box shadow border">
+    <a (click)="toggleEducation()" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+        <img src="circle.png" alt="linkedin logo" class="logo">
+        <h3 class="link-text">Education</h3>
+    </a>
+    <div id="educationContent" class="hide">
+        <h2 class="education">Epitech Lyon 2023 - 2028</h2>
+    </div>
+</div>
+
+<div class="box shadow border">
+    <a (click)="toggleCertifications()" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+        <img src="circle.png" alt="linkedin logo" class="logo">
+        <h3 class="link-text">Certifications</h3>
+    </a>
+    <div id="certificationsContent" class="hide">
+        <h2 class="certifications">Taker-Academy 2024 (Web Development) 🎓</h2>
+    </div>
+</div>
+
+<div class="box shadow border">
+    <a (click)="toggleSkills()" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+        <img src="circle.png" alt="linkedin logo" class="logo">
+        <h3 class="link-text">Skills</h3>
+    </a>
+    <div id="skillsContent" class="hide">
+        <div class="skills-container">
+            <img class="skills" src="angular.png" alt="Angular">
+            <img class="skills" src="python.png" alt="Python">
+            <img class="skills" src="js.png" alt="JavaScript">
+            <img class="skills" src="ts.png" alt="TypeScript">
+            <img class="skills" src="c.png" alt="C">
+            <img class="skills" src="node.png" alt="Node.js">
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.box {
+    background-color: rgba(245, 245, 245, 0.078);
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border {
+    border: 1px solid rgba(245, 245, 245, 0.078) !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(99, 39, 39, 0.15) !important;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.list-group-item {
+    display: flex;
+    max-width: 98%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+    margin: 0 auto;
+}
+
+.list-group-item:hover {
+    transform: scale(1.01);
+}
+
+.list-group-item-action {
+    color: #495057;
+    text-align: inherit;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.gap-3 {
+    gap: 1rem !important;
+}
+
+.py-3 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0 !important;
+}
+
+.me-5 {
+    margin-right: 3rem !important;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border-radius: 20%;
+    box-shadow: .5rem .5rem .5rem rgba(.15,.15,.15,.15) !important;
+}
+
+.link-text {
+    margin-top: 45px;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+

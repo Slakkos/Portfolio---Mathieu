@@ -1,0 +1,26 @@
+<nav class="navbar border-bottom mb-3">
+    <div class="container">
+        <ul class="justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="navigateTo('home')" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="navigateTo('portfolio')" routerLinkActive="active">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="navigateTo('resume')" routerLinkActive="active">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="navigateTo('contact')" routerLinkActive="active">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="name"> Mathieu Rea</div>
+    <img [class]="isMenuOpen ? 'logoClosed' : 'logoOpen'" [src]="isMenuOpen ? 'cross.png' : 'hamburger-menu.png'" (click)="toggleMenu()">
+    <div class="hamburger" [class.open]="isMenuOpen">
+        <div class="first-line" (click)="navigateTo('home')">Home</div>
+        <div class="line" (click)="navigateTo('portfolio')">Portfolio</div>
+        <div class="line" (click)="navigateTo('resume')">Resume</div>
+        <div class="last-line line" (click)="navigateTo('contact')">Contact</div>
+    </div>
+</nav>

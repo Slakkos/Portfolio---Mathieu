@@ -1,0 +1,66 @@
+/* Ajustement global de la mise en page */
+.container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(245, 245, 245, 0.078);
+    color: white;
+}
+
+.col-lg {
+    flex: 1 0 48%;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.col-lg img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+@media (min-width: 1100px) {
+    .col-lg {
+        flex: 1;
+    }
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.border {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 2%;
+}
+
+.m-1 {
+    margin: .25rem!important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.rounded-circle {
+    border-radius: 30%;
+    object-position: 0 100%;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 15px;
+}
+
+.border {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box-project-modal {
+    background-color: transparent;
+}

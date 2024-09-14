@@ -1,0 +1,23 @@
+<app-header></app-header>
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="mathieu.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                <p>Actually student at Epitech Lyon</p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <div *ngFor="let picture of featuredProjects.pictures">
+                    <h4>{{featuredProjects.name}}</h4>
+                    <img class="" src="{{picture}}" alt="project picture" class="border" style="display: block; width: 100%;">
+                    <p>{{featuredProjects.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

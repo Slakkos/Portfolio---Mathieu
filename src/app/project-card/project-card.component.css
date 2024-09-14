@@ -1,0 +1,239 @@
+
+.card {
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: .90rem;
+    transition: transform 0.3s;
+    margin-top: 20px;
+    background-color: rgba(245, 245, 245, 0.078);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+    color: #ffffff;
+    /* text-shadow: -1px 0 #5300c0, 0 1px #5300c0, 1px 0 #5300c0, 0 -1px #5300c0; */
+}
+
+.card-text {
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn-primary {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: #f1eded;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-radius: 0 0 .90rem .90rem;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap!important;
+}
+
+.justify-content-center {
+    justify-content: center!important;
+}
+
+.tag {
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px;
+}
+
+
+/*///////////*/
+
+/* Cache tous les éléments sauf l'overlay quand le modal est ouvert */
+body.modal-open > :not(.overlay) {
+    display: none;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal */
+.modal {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titre */
+h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraphe */
+p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Image et Vidéo */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Fermer la modale */
+.modal.close {
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal ouvert */
+.modal.open {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.responsive-image, .responsive-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.bit {
+    width: 20px;
+    margin-top: 5px;
+    aspect-ratio: 1;
+}
+
+.modal a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.modal a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    img, video {
+        max-width: 100%;
+    }
+
+    .close-button {
+        font-size: 2.5vw;
+    }
+}

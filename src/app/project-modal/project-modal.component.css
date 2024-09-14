@@ -1,0 +1,36 @@
+.bubbles {
+    position: relative;
+    display: flex;
+    z-index: -1;
+    width: 100%;
+}
+
+.bubbles span {
+    position: relative;
+    width: 0.5vh;
+    height: 0.5vw;
+    background: white;
+    margin: 0.5vmin;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #e9ecefca,
+    0 0 50px white,
+    0 0 100px white;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: white;
+    box-shadow: 0 0 0 10px #e9ecefca,
+    0 0 50px white,
+    0 0 100px white;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(80vh) scale(0);
+    }
+    100% {
+        transform: translateY(-60vh) scale(1);
+    }
+}

@@ -1,0 +1,12 @@
+* {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    scrollbar-color:  rgb(178, 178, 178) white;
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url('../public/blue violet back.jpg');
+    background-repeat: no-repeat;
+    background-size: 3000px;
+}
