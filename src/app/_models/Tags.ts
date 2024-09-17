@@ -9,6 +9,7 @@ export class Tag {
     static readonly JAVASCRIPT = new Tag('JavaScript', 'white', 'js.png');
     static readonly REACT = new Tag('React', 'white', 'react.png');
     static readonly VUE = new Tag('Vue', 'white', 'vue.png');
+    static readonly C = new Tag('C', 'white', 'C.png');
 
     private constructor(public readonly key: string, public readonly color: string, public readonly image: string) {
 

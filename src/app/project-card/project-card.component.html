@@ -10,7 +10,7 @@
             <div *ngFor="let tag of project.tags">
                 <div class="tag me-2 mb-1" style="color: black; width: auto; height: auto;" [style.background-color]="tag.color">
                     <div style="display: flex; align-items: center;">
-                        <img style="margin-bottom: 5px; width: 22px;"[src]="tag.GetImageOfTag()" class="bit"/>
+                        <img style="margin-bottom: 5px; width: 22px;" [src]="tag.GetImageOfTag()" class="bit"/>
                         <span style="font-weight: bold; font-size: 12px; margin-left: 10px; margin-top: 2px;">{{ tag.key }}</span>
                     </div>
                 </div>

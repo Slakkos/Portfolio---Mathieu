@@ -1,12 +1,15 @@
 
 .card {
-    /* border: 1px solid rgba(0,0,0,.125); */
     border-radius: .90rem;
     transition: transform 0.3s;
     margin-top: 20px;
     background-color: rgba(245, 245, 245, 0.078);
+    /* Hauteur fixe pour toutes les cartes */
+    height: 260px; /* Ajuste cette valeur selon tes besoins */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assure que les éléments sont bien répartis */
 }
-
 .card:hover {
     transform: scale(1.1);
 }
@@ -20,9 +23,8 @@
 }
 
 .card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
     padding: 1.25rem;
+    flex-grow: 1; /* Permet au corps de la carte de prendre tout l'espace disponible */
 }
 
 .card-title {
@@ -63,6 +65,8 @@
     background-color: #f1eded;
     border-top: 1px solid rgba(0,0,0,.125);
     border-radius: 0 0 .90rem .90rem;
+    /* S'assure que le footer reste en bas */
+    flex-shrink: 0;
 }
 
 .d-flex {
